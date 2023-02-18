@@ -613,11 +613,7 @@ hi! link Constant GruvboxPurple
 " Character constant: 'c', '/n'
 hi! link Character GruvboxPurple
 " String constant: "this is a string"
-if g:gruvbox_improved_strings == 0
-  call s:HL('String',  s:green, s:none, s:italicize_strings)
-else
-  call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
-endif
+call s:HL('String',  s:fg1, s:none, s:italicize_strings)
 " Boolean constant: TRUE, false
 hi! link Boolean GruvboxPurple
 " Number constant: 234, 0xff
